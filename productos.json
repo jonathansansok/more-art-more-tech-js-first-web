@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "precio": "20",
+        "origen": "USA",
+        "foto": "api2-rezi.png",
+        "descrip": "Channel Strip clásico americano.",
+        "titulo": "API"
+        },
+        {
+        "id": "2",
+        "precio": "10",
+        "origen": "UK",
+        "foto": "pre-neve.jpg   ",
+        "descrip": "Channel Strip clásico britanico.",
+        "titulo": "NEVE"
+        }
+]
