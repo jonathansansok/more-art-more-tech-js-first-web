@@ -63,10 +63,6 @@ const comprar = () => {
 document.getElementById("btnComprar").addEventListener("click", comprar);
 
     
-/* document.getElementById("btnComprar")("click", function(){
-    swal("Good job!", "You clicked the button!", "success");
-}); */
- 
 
 
 
