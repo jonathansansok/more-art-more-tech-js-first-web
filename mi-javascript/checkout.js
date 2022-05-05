@@ -57,12 +57,19 @@ const comprar = () => {
         text: "¡Te esperamos pronto!",
         icon: "success",
         button: "Aceptar",
-
     });
 }
-document.getElementById("btnComprar").addEventListener("click", comprar);
+//hacer que la funcion de abajo  me devuelva a la tienda despues del alert de finalizacion de compra
+//y que vuelva con el carrito reseteado
+const volverATienda = () => {
+    window.location.href = "tienda.html";}
 
-    
+document.getElementById("btnComprar").addEventListener("click", comprar,);
+
+
+
+
+
 
 
 
