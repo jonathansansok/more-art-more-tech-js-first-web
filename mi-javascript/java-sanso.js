@@ -97,6 +97,7 @@ let productos = [
     titulo: "VARI-MU"
     }
 ]
+tratandoJson = [];
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
