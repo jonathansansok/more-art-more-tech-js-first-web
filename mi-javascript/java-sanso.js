@@ -1,102 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-/* let productos = [
-    {
-    id: "1",
-    precio: "40",
-    origen: "USA",
-    clase: "fotoDeApi",
-    descrip: "Channel Strip clásico americano.",
-    titulo: "API"
-    },
-    {
-    id: "2",
-    precio: "50",
-    origen: "UK",
-    clase: "fotoDeNeve",
-    descrip: "Channel Strip clásico britanico.",
-    titulo: "NEVE"
-    },
-    {
-    id: "3",
-    precio: "55",
-    origen: "UK",
-    clase: "fotoDeSsl-e",
-    descrip: "Channel Strip clásico britanico Rockero.",
-    titulo: "SSL-E"
-    },
-    {
-    id: "4",
-    precio: "57",
-    origen: "UK",
-    clase: "fotoDeSsl-g",
-    descrip: "Channel Strip clásico britanico moderno.",
-    titulo: "SSL-G"
-    },
-    {
-    id: "5",
-    precio: "60",
-    origen: "UK",
-    clase: "fotoDeTrident",
-    descrip: "Channel Strip clásico de Master of Puppets",
-    titulo: "TRIDENT"
-    },
-    {
-    id: "6",
-    precio: "55",
-    origen: "UK",
-    clase: "fotoDeTelefunken",
-    descrip: "Strip clasico británico de sonido Beatle. ",
-    titulo: "TELEFUNKEN"
-    },
-    {
-    id: "7",
-    precio: "49",
-    origen: "USA",
-    clase: "fotoDeApi-2500",
-    descrip: "Compressor vca transparente y punchy.",
-    titulo: "API-2500"
-    },
-    {
-    id: "8",
-    precio: "60",
-    origen: "UK",
-    clase: "fotoDeTape",
-    descrip: "Cinta análogica tipo sony Studer.",
-    titulo: "TAPE"
-    },
-    {
-    id: "9",
-    precio: "61",
-    origen: "USA",
-    clase: "fotoDeReverb",
-    descrip: "Angelical Reverb, soft y transparente HQ.",
-    titulo: "PRO-REVERB"
-    },
-    {
-    id: "10",
-    precio: "63",
-    origen: "UK",
-    clase: "fotoDeTriode-609",
-    descrip: "Compressor VCA creamy y depth. ",
-    titulo: "TRIODE-609"
-    },
-    {
-    id: "11",
-    precio: "65",
-    origen: "UK",
-    clase: "fotoDeG-comp",
-    descrip: "Compressor vca rocky and punchy.",
-    titulo: "G-COMP"
-    },
-    {
-    id: "12",
-    precio: "48",
-    origen: "USA",
-    clase: "fotoDeVari-mu",
-    descrip: "Compressor vari-mu soft, vintage, creamy. ",
-    titulo: "VARI-MU"
-    }
-] */
+
 let tratandoJson = [];
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -130,7 +33,7 @@ function cargarJson(){
        renderizarProductos(tratandoJson);
     })
 }
-cargarJson()
+cargarJson();
 
 const renderizarProductos = (array) => {
     let seccion = document.getElementById("renderProds");
@@ -152,7 +55,6 @@ const renderizarProductos = (array) => {
 renderizarProductos();
 
 
-/* const productos = JSON.parse(localStorage.getItem("carrito")); */
 
 const actualizarCantidadCarrito = () => {
     let cantidad = 0;
