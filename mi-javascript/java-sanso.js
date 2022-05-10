@@ -121,8 +121,16 @@ const agregarItem = (idProducto) => {
 /*     alert("Item agregado al carrito"); */
 }
 
+function cargarJson(){
+    fetch("./carrito.json")
+    .then(resp => resp.json())
+    .then((data) => {
+       tratandoJson = data;
+       renderizarProductos(tratandoJson)
+    })
+}
 
-const renderizarProductos = () => {
+const renderizarProductos = (array) => {
     let seccion = document.getElementById("renderProds");
     for (const prod of productos){
     seccion.innerHTML += `
