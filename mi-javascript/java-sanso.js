@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-let productos = [
+/* let productos = [
     {
     id: "1",
     precio: "40",
@@ -96,7 +96,7 @@ let productos = [
     descrip: "Compressor vari-mu soft, vintage, creamy. ",
     titulo: "VARI-MU"
     }
-]
+] */
 tratandoJson = [];
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
