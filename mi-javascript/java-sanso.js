@@ -143,14 +143,12 @@ const renderizarProductos = (array) => {
         <input type="button" value="Agregar a carrito" class="botonAdd" id="botonAdd${prod.id}"/>
         </section>
         `
+        document.getElementById("botonAdd"+prod.id).addEventListener("click", function () {
+            agregarItem(prod.id);
+            })
     }
 }
 renderizarProductos();
-for (const prod of productos) {
-    document.getElementById("botonAdd"+prod.id).addEventListener("click", function () {
-        agregarItem(prod.id);
-        })
-    }
 
 
 /* const productos = JSON.parse(localStorage.getItem("carrito")); */
