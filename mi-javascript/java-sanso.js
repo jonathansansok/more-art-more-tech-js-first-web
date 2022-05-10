@@ -98,25 +98,11 @@ let productos = [
     }
 ]
 
-/* const botoncomprar = document.getElementById("botonAdd1");
-botoncomprar.addEventListener("click", function () {
-    agregarItem(1);
-}) */
-/* for (const prod of productos){
-    document.getElementById("botonAdd"+prod.id).addEventListener("click", function () {
-        agregarItem(prod.id);
-    })
-} */
-
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-
 
 //agrego un OPERADOR TERNARIO OR que recupera el último estado del carrito
 const carritoHay = JSON.parse(localStorage.getItem('carrito')) || []
 console.log(carritoHay);
-
-
-
 
 const agregarItem = (idProducto) => {
     let producto = productos.find(producto => producto.id == idProducto);
