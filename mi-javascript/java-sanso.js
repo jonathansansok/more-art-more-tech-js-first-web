@@ -110,37 +110,12 @@ botoncomprar.addEventListener("click", function () {
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-//////////////////////////////////////////////////////////////////////////
-//agrego un OPERADOR TERNARIO
-carrito.length === 0 && console.log("El carrito está vacío!")
 
 //agrego un OPERADOR TERNARIO OR que recupera el último estado del carrito
 const carritoHay = JSON.parse(localStorage.getItem('carrito')) || []
 console.log(carritoHay);
 
-//agrego DESESTRUCTURACION del carrito
-const [titulo, precio] = carrito;
-console.log(titulo);
-console.log(precio);
 
-//agrego SPRED del carrito
-
-// lista todas las propiedades y valores de usuario1 dentro de otro objeto
-const listaPracticar = {
-    ...productos[0],
-}
-
-console.log(listaPracticar);
-
-const listaPracticar2 = {
-    ...productos[0],
-    id: "30",
-    titulo: "MONSTER"
-}
-
-console.log(listaPracticar2);
-
-//////////////////////////////////////////////////////////////////////////////////
 
 
 const agregarItem = (idProducto) => {
