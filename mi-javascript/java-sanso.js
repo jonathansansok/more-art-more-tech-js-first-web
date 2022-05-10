@@ -126,7 +126,7 @@ function cargarJson(){
     .then(resp => resp.json())
     .then((data) => {
        tratandoJson = data;
-       renderizarProductos(tratandoJson)
+       renderizarProductos(tratandoJson);
     })
 }
 
