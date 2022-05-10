@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     titulo: "VARI-MU"
     }
 ] */
-tratandoJson = [];
+let tratandoJson = [];
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
@@ -123,17 +123,18 @@ const agregarItem = (idProducto) => {
 }
 
 function cargarJson(){
-    fetch("./carrito.json")
+    fetch("./productos.json")
     .then(resp => resp.json())
     .then((data) => {
        tratandoJson = data;
        renderizarProductos(tratandoJson);
     })
 }
+cargarJson()
 
 const renderizarProductos = (array) => {
     let seccion = document.getElementById("renderProds");
-    for (const prod of productos){
+    for (const prod of array){
     seccion.innerHTML += `
     <section class="buyApi">
         <h3 class="titleBuy">${prod.titulo}</h3>
