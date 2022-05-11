@@ -22,7 +22,7 @@ const agregarItem = (idProducto) => {
     };
     localStorage.setItem("carrito", JSON.stringify(carrito));
     actualizarCantidadCarrito();
-/*     alert("Item agregado al carrito"); */
+
 }
 
 function cargarJson(){
