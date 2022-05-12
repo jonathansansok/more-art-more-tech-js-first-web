@@ -9,7 +9,7 @@ const carritoHay = JSON.parse(localStorage.getItem('carrito')) || []
 console.log(carritoHay);
 
 const agregarItem = (idProducto) => {
-    let producto = productos.find(producto => producto.id == idProducto);
+    let producto = tratandoJson.find(producto => producto.id == idProducto);
     if (carrito.findIndex(producto => producto.id == idProducto) == -1) {
         producto.cantidad = 1;
         carrito.push(producto);
@@ -22,7 +22,6 @@ const agregarItem = (idProducto) => {
     };
     localStorage.setItem("carrito", JSON.stringify(carrito));
     actualizarCantidadCarrito();
-
 }
 
 function cargarJson(){
@@ -31,11 +30,13 @@ function cargarJson(){
     .then((data) => {
        tratandoJson = data;
        renderizarProductos(tratandoJson);
-    })
+       darAccionABotones();
+    });
 }
 cargarJson();
-
+//LLAMABA en 56 sin haber devuelto las promesa.
 const renderizarProductos = (array) => {
+    console.log(array);
     let seccion = document.getElementById("renderProds");
     for (const prod of array){
     seccion.innerHTML += `
@@ -47,21 +48,21 @@ const renderizarProductos = (array) => {
         <input type="button" value="Agregar a carrito" class="botonAdd" id="botonAdd${prod.id}"/>
         </section>
         `
+     }
+}
+function darAccionABotones(){
+    for (const prod of tratandoJson) {
         document.getElementById("botonAdd"+prod.id).addEventListener("click", function () {
             agregarItem(prod.id);
-            })
+        })
     }
 }
-renderizarProductos();
-
-
-
 const actualizarCantidadCarrito = () => {
     let cantidad = 0;
     for (const prod of carrito){
         cantidad += prod.cantidad;
     }
-document.getElementById("contadorId").innerHTML = cantidad;
+    document.getElementById("contadorId").innerHTML = cantidad;
 }
 actualizarCantidadCarrito();
 

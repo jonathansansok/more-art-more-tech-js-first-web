@@ -57,12 +57,20 @@ const comprar = () => {
         text: "¡Te esperamos pronto!",
         icon: "success",
         button: "Aceptar",
+    }).then((result) => {
+        vaciarCarrito()
+        volverATienda();
+
     });
 }
 //hacer que la funcion de abajo  me devuelva a la tienda despues del alert de finalizacion de compra
 //y que vuelva con el carrito reseteado
 const volverATienda = () => {
     window.location.href = "tienda.html";}
+
+function vaciarCarrito(){
+    localStorage.setItem("carrito", JSON.stringify([]));
+}
 
 document.getElementById("btnComprar").addEventListener("click", comprar,);
 
