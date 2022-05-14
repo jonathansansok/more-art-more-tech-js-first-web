@@ -589,7 +589,7 @@ input textarea, textarea textarea {
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .todosParametros label {
@@ -599,7 +599,7 @@ input textarea, textarea textarea {
 
 #buscador {
   margin: 5px;
-  width: 250px;
+  width: 190px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -1053,34 +1053,6 @@ input textarea, textarea textarea {
     font-size: 95%;
   }
 }
-@media (max-width: 690px) {
-  .todosParametros {
-    height: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 10px;
-    grid-template-rows: 50% 50%;
-    grid-auto-columns: 1fr;
-    /*         gap: 5px 5px; */
-    grid-template-areas: "escalaPrecio shoppingTodo" "nacionalidad shoppingTodo";
-  }
-
-  .escalaPrecio {
-    grid-area: escalaPrecio;
-    margin-left: 40px;
-  }
-
-  .nacionalidad {
-    grid-area: nacionalidad;
-    margin-left: 40px;
-  }
-
-  .shoppingTodo {
-    grid-area: shoppingTodo;
-    display: flex;
-    margin-left: 40%;
-  }
-}
 @media (max-width: 635px) {
   .product-rowy .grid-container-data {
     display: grid;
@@ -1094,14 +1066,6 @@ input textarea, textarea textarea {
     margin-top: 10px;
   }
 
-  .todosParametros {
-    grid-template-columns: 60% 40%;
-    margin-bottom: 40px;
-    grid-template-rows: 50% 50%;
-    grid-auto-columns: 1fr;
-    grid-template-areas: "escalaPrecio shoppingTodo" "nacionalidad shoppingTodo";
-  }
-
   .escalaPrecio {
     font-size: 12px;
   }
@@ -1112,7 +1076,7 @@ input textarea, textarea textarea {
   }
 
   .shoppingTodo {
-    margin-left: 20%;
+    margin-left: 5%;
   }
 }
 @media (max-width: 522px) {
@@ -1121,46 +1085,7 @@ input textarea, textarea textarea {
   }
 }
 @media (max-width: 501px) {
-  .todosParametros {
-    grid-template-columns: 60% 40%;
-  }
-  .todosParametros .escalaPrecio {
-    margin-left: 10px;
-  }
-  .todosParametros .escalaPrecio h3 {
-    font-size: 14px;
-    margin: 2px 10px 0px 0px;
-  }
-  .todosParametros .nacionalidad {
-    margin-left: 10px;
-    margin-bottom: 20px;
-    height: 30px;
-  }
-  .todosParametros .nacionalidad .originDivs {
-    margin-left: 25px;
-    margin-bottom: 20px;
-  }
-  .todosParametros .nacionalidad .origen {
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 14px;
-  }
-  .todosParametros .nacionalidad .inputsNationals {
-    font-size: 14px;
-  }
-  .todosParametros .nacionalidad .inputsBuy {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .todosParametros .shoppingTodo {
-    margin-left: 0px;
-    margin-bottom: 20px;
-  }
-  .todosParametros .shoppingTodo img {
-    width: 65%;
-  }
-  .todosParametros .shoppingTodo .contadorUnidades {
+  .contadorUnidades {
     width: 30%;
     margin-left: 0px;
   }
