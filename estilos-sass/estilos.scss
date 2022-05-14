@@ -599,58 +599,14 @@ input, textarea {
 
     }
 }
-.escalaPrecio { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 2px;
-    box-sizing: border-box;
-    margin-left: 2px;
-    text-align: center;
-        h3{
-            margin-right: 10px;
 
-        }
-        .maxPrecio{
-            margin-right: 5px;
-            margin-top: 7px;
-            margin-bottom: 5px;
-
-        }
-    
-}
-.nacionalidad { 
-    margin-right: 5px;
-    display: flex;
-    box-sizing: border-box;
-    text-align: center;	
-}
- .origen {
-    margin-top: 5px;
+#buscador{
+    margin: 5px;
+    width: 250px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 10px;
-}
-.originDivs {
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px ;
-
-} 
-.inputsBuy {
-
-    width: 10px;
-    text-align: left;
-}
-.escalaPrecio3{ 
-    width: 80%;
-    box-sizing: border-box;
-    margin-left: 10%;
-    text-align: center;
 }
 .shoppingTodo{
     background-color: $color2;
@@ -861,8 +817,8 @@ input, textarea {
     grid-template-columns: 12rem 12rem 12rem;
     grid-template-rows: 50px auto 50px 50px;
     gap: 5px 5px;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 205px;
     grid-auto-flow: row;
     grid-template-areas:
       "elementosSeleccionados canti prec"
@@ -896,7 +852,15 @@ input, textarea {
     background-color: $color1;
     border-radius: 10px;
     text-align: center;
+    color: black;
+/*     .emparejar{
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
     }
+
 
     .precio { grid-area: precio; 
     background-color: $color1;
@@ -917,9 +881,14 @@ input, textarea {
 }
 .botonesCheckout {
     border-radius: 10px;
-    color:green;
-    background-color: black;
-    border: 3px solid $color1;
+    color:black;
+    font-weight: bold;
+    background-color: rgb(212, 193, 193);
+
+    align-self: center;
+    border: 0px;
+    padding: 0px 5px;
+    background-color: transparent;
 
 
 

@@ -57,23 +57,18 @@
       <article class="carritoTodo">
         <section class="buyModifiers">
           <div class="todosParametros">
-            <div class= "escalaPrecio" >
-              <h3>Precio</h3>
-              <input class="maxPrecio" type="range" min="1" max="100" value="50">
-            </div>
-            <div class= "nacionalidad">
-              <h3 class= "origen">Origen</h3>
-              <div class="originDivs">
-                <div class="inputsNationals">
-                  <input class="inputsBuy"  type="radio" id="americano" name="drone" value="huey"checked default none>
-                  <label for="huey">USA</label>
+              <form id="buscador">
+                <div class="row">
+                    <div class="marcaTodo">
+                        <label for="marca">Origen</label>
+                        <select class="u-full-width" id="marca">
+                            <option value="">Seleccione</option>
+                            <option value="Audi">USA</option> 
+                            <option value="BMW">UK</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="inputsNationals">
-                  <input class="inputsBuy" type="radio" id="brit" name="drone" value="dewey">
-                  <label for="dewey">UK</label>
-                </div>
-              </div>
-            </div>
+              </form>
               <div class="shoppingTodo">
                 <a id="shoppingLogo" class="shoppingCart" href="checkout.html" target="_blank"><img src="https://icongr.am/fontawesome/shopping-cart.svg?size=60&color=4ca725" alt="shopping cart"></a>
                 <p class="contadorUnidades" id="contadorId">00</p>

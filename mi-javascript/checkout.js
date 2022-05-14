@@ -22,7 +22,7 @@ divCantidad.innerHTML = "";
 for (prod of productos) {
     divProducto.innerHTML += "<h5>" + prod.titulo + "</h5>";
     divPrecio.innerHTML += "<h5>" + (prod.precio * prod.cantidad) + "</h5>";
-    divCantidad.innerHTML += "<h5><button class='botonesCheckout' onclick= 'removeItem("+prod.id+")'>-</button>" + prod.cantidad + "</h5 > <button class='botonesCheckout' onclick= 'addItem("+prod.id+")'>+</button> ";
+    divCantidad.innerHTML += "<h5><button class='botonesCheckout' onclick= 'removeItem("+prod.id+")'>- </button> " + prod.cantidad + " <button class='botonesCheckout' onclick= 'addItem("+prod.id+")'>+</button></h5 >";
     }
     total();
 }

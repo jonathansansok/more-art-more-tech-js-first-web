@@ -39,8 +39,7 @@ miFormulario.addEventListener("submit", validarFormulario);
 
 function validarFormulario(e){
     e.preventDefault();
-    console.log("Formulario Enviado")
-    alert("El formulario se ha enviado correctamente");    
+    alert("Gracias por contactarnos!");
 }
 
 
