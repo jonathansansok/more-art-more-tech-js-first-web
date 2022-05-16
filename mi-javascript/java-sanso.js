@@ -34,7 +34,7 @@ function cargarJson(){
     });
 }
 cargarJson();
-//LLAMABA en 56 sin haber devuelto las promesa.
+
 const renderizarProductos = (array) => {
     console.log(array);
     let seccion = document.getElementById("renderProds");
@@ -48,7 +48,7 @@ const renderizarProductos = (array) => {
         <input type="button" value="Agregar a carrito" class="botonAdd" id="botonAdd${prod.id}"/>
         </section>
         `
-     }
+    }
 }
 function darAccionABotones(){
     for (const prod of tratandoJson) {
@@ -65,16 +65,5 @@ const actualizarCantidadCarrito = () => {
     document.getElementById("contadorId").innerHTML = cantidad;
 }
 actualizarCantidadCarrito();
+});
 
-})
-
-//resetear carrito
-
-/* marca.addEventListener('change', e => {
-    datosBusqueda.marca = e.target.value;
-
-    filtrarAuto();
-})
- */
-
-//funcion que filtra en base a la busqueda.addEventListene

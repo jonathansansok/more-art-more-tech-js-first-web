@@ -3,7 +3,6 @@ const productos = JSON.parse(localStorage.getItem("carrito"));
 let divProducto = document.getElementById("divProducto");
 let divPrecio = document.getElementById("divPrecio");
 let divCantidad = document.getElementById("divCantidad");
-
 let precioFinal = document.getElementById("precioFinal");
 
 const total =  () => {
@@ -58,13 +57,22 @@ const comprar = () => {
         icon: "success",
         button: "Aceptar",
     }).then((result) => {
-        vaciarCarrito()
+        ceroProductos();
+        vaciarCarrito();
         volverATienda();
 
     });
 }
 //hacer que la funcion de abajo  me devuelva a la tienda despues del alert de finalizacion de compra
 //y que vuelva con el carrito reseteado
+
+function ceroProductos(){
+    if(total == 0) {
+        document.getElementById("btnComprar").style.display = "none";
+    }
+}
+
+
 const volverATienda = () => {
     window.location.href = "tienda.html";}
 
@@ -73,11 +81,6 @@ function vaciarCarrito(){
 }
 
 document.getElementById("btnComprar").addEventListener("click", comprar,);
-
-
-
-
-
 
 
 
