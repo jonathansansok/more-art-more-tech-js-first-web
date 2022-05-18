@@ -71,14 +71,6 @@ if (finalCero == 0) {
     }
 }
 
-
-
-/* function ceroProductos(){
-    if(total == 0) {
-        document.getElementById("btnComprar").style.display = "none";
-    }
-} */
-
 const volverATienda = () => {
     window.location.href = "tienda.html";}
 
