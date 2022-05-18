@@ -63,15 +63,13 @@ const comprar = () => {
 
     });
 }
-//hacer que la funcion de abajo  me devuelva a la tienda despues del alert de finalizacion de compra
-//y que vuelva con el carrito reseteado
-
 
 function comparando()  {
     const finalCero = document.querySelector('#finalCeroQuizas');
 if (finalCero == 0) {
     document.getElementById("btnComprar").style.display = "none";
-}}
+    }
+}
 
 
 
