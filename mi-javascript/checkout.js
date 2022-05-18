@@ -11,7 +11,7 @@ const total =  () => {
 for (prod of productos) {
     totalPagar += prod.precio * prod.cantidad;
     }
-    precioFinal.innerHTML += "<h5>Total: " + <span id="totalCero">(totalPagar)</span> + "</h5>";
+    precioFinal.innerHTML += "<h5>Total: " + <span id="finalCeroQuizas">(totalPagar)</span> + "</h5>";
 }
 
 const renderCheckOut = () => {
@@ -68,7 +68,7 @@ const comprar = () => {
 
 
 function comparando()  {
-    const finalCero = document.querySelector('#finalTotal');
+    const finalCero = document.querySelector('#finalCeroQuizas');
 if (finalCero== 0) {
     document.getElementById("btnComprar").style.display = "none";
 }}
