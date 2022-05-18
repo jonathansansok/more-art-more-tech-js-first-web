@@ -11,7 +11,7 @@ const total =  () => {
 for (prod of productos) {
     totalPagar += prod.precio * prod.cantidad;
     }
-    precioFinal.innerHTML += "<h5>Total: " + (totalPagar) + "</h5>";
+    precioFinal.innerHTML += "<h5>Total: " + `${<span id="totalCero">(totalPagar)</span>}` + "</h5>";
 }
 
 const renderCheckOut = () => {
@@ -57,7 +57,7 @@ const comprar = () => {
         icon: "success",
         button: "Aceptar",
     }).then((result) => {
-        ceroProductos();
+        comparando();
         vaciarCarrito();
         volverATienda();
 
@@ -66,12 +66,20 @@ const comprar = () => {
 //hacer que la funcion de abajo  me devuelva a la tienda despues del alert de finalizacion de compra
 //y que vuelva con el carrito reseteado
 
-function ceroProductos(){
+
+function comparando()  {
+    const finalCero = document.querySelector('#finalTotal');
+if (finalCero== 0) {
+    document.getElementById("btnComprar").style.display = "none";
+}}
+
+
+
+/* function ceroProductos(){
     if(total == 0) {
         document.getElementById("btnComprar").style.display = "none";
     }
-}
-
+} */
 
 const volverATienda = () => {
     window.location.href = "tienda.html";}
