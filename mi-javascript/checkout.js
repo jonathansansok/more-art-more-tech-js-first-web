@@ -66,7 +66,7 @@ const comprar = () => {
 
 function comparando()  {
     const finalCero = document.querySelector('#finalCeroQuizas');
-if (finalCero.textContent == 0) {
+if (finalCero.innerHTML == 0) {
     document.getElementById("btnComprar").style.display = "none";
     }
 }
