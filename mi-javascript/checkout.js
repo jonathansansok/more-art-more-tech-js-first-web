@@ -69,7 +69,7 @@ const comprar = () => {
 
 function comparando()  {
     const finalCero = document.querySelector('#finalCeroQuizas');
-if (finalCero== 0) {
+if (finalCero == 0) {
     document.getElementById("btnComprar").style.display = "none";
 }}
 
