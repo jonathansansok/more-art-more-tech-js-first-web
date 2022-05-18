@@ -11,7 +11,7 @@ const total =  () => {
 for (prod of productos) {
     totalPagar += prod.precio * prod.cantidad;
     }
-    precioFinal.innerHTML += "<h5>Total: " + `${<span id="totalCero">(totalPagar)</span>}` + "</h5>";
+    precioFinal.innerHTML += "<h5>Total: " + <span id="totalCero">(totalPagar)</span> + "</h5>";
 }
 
 const renderCheckOut = () => {
