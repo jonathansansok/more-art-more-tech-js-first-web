@@ -46,13 +46,13 @@ const removeItem = (idProducto) => {
         productos.splice(productos.indexOf(producto), 1);
         (localStorage.setItem("carrito", JSON.stringify(productos)));
         renderCheckOut();
+        comparando();
     }
 }})
 }
 renderCheckOut();
 
 const comprar = () => {
-    comparando();
     swal({
         title: "¡Gracias por comprar!",
         text: "¡Te esperamos pronto!",
@@ -69,7 +69,7 @@ const comprar = () => {
 function comparando()  {
     const finalCero = document.querySelector('#finalCeroQuizas');
 if (finalCero.innerText == 0) {
-    document.getElementById("btnComprar").style.display = "none";
+    document.getElementById("btnComprar").disabled = true;
     }
 }
 
