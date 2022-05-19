@@ -11,7 +11,8 @@ const total =  () => {
 for (prod of productos) {
     totalPagar += prod.precio * prod.cantidad;
     }
-    precioFinal.innerHTML += "<h5>Total: " + <span id="finalCeroQuizas">(totalPagar)</span> + "</h5>";
+    precioFinal.innerHTML += "<h5>Total <span id='finalCeroQuizas'>" + totalPagar + "</span></h5>";
+    
 }
 
 const renderCheckOut = () => {
@@ -51,13 +52,14 @@ const removeItem = (idProducto) => {
 renderCheckOut();
 
 const comprar = () => {
+    comparando();
     swal({
         title: "¡Gracias por comprar!",
         text: "¡Te esperamos pronto!",
         icon: "success",
         button: "Aceptar",
     }).then((result) => {
-        comparando();
+
         vaciarCarrito();
         volverATienda();
 
@@ -66,7 +68,7 @@ const comprar = () => {
 
 function comparando()  {
     const finalCero = document.querySelector('#finalCeroQuizas');
-if (finalCero.textContent == 0) {
+if (finalCero.innerText == 0) {
     document.getElementById("btnComprar").style.display = "none";
     }
 }
