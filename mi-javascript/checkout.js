@@ -11,7 +11,7 @@ const total =  () => {
 for (prod of productos) {
     totalPagar += prod.precio * prod.cantidad;
     }
-    precioFinal.innerHTML += "<h5>Total <span id='finalCeroQuizas'>" + totalPagar + "</span></h5>";
+    precioFinal.innerHTML += "<h5>Total: <span id='finalCeroQuizas'>" + totalPagar + "</span></h5>";
     
 }
 
@@ -25,6 +25,7 @@ for (prod of productos) {
     divCantidad.innerHTML += "<h5><button class='botonesCheckout' onclick= 'removeItem("+prod.id+")'>- </button> " + prod.cantidad + " <button class='botonesCheckout' onclick= 'addItem("+prod.id+")'>+</button></h5 >";
     }
     total();
+    comparando();
 }
 
 const addItem = (idProducto) => {
@@ -46,7 +47,7 @@ const removeItem = (idProducto) => {
         productos.splice(productos.indexOf(producto), 1);
         (localStorage.setItem("carrito", JSON.stringify(productos)));
         renderCheckOut();
-        comparando();
+
     }
 }})
 }
