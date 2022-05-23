@@ -92,6 +92,12 @@ function filtrarAccion(ukUsa){
 function filtrarOrigen(){
     limpiarHTML();
     const resultado = autos.filter(filtrarAccion);
-    mostrarAutos(resultado);
+    mostrarmeResultado(resultado);
+}
+
+function limpiarHTML(){
+    while(resultado.firstChild){
+        resultado.removeChild(resultado.firstChild);
+    }
 }
 
