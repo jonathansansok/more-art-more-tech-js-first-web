@@ -92,7 +92,6 @@ function filtrarAccion(ukUsa){
 function filtrarOrigen(){
     limpiarHTML();
     const resultado = autos.filter(filtrarAccion);
-    if (resultado.length){
     mostrarAutos(resultado);
-    } 
 }
+
