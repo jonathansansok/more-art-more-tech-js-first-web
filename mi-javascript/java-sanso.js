@@ -81,11 +81,18 @@ buscando.addEventListener('change', e => {
     filtrarOrigen();
 });
 
-function filtrarOrigen(){
+function filtrarAccion(ukUsa){
     const { origen } = datosBusqueda;
     if ( origen ){
-        return prod.origen === origen;
+        return ukUsa.origen === origen;
     }
     return ukUsa;
 }
 
+function filtrarOrigen(){
+    limpiarHTML();
+    const resultado = autos.filter(filtrarAccion);
+    if (resultado.length){
+    mostrarAutos(resultado);
+    } 
+}
