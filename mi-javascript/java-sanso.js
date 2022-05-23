@@ -64,6 +64,23 @@ const actualizarCantidadCarrito = () => {
     }
     document.getElementById("contadorId").innerHTML = cantidad;
 }
-actualizarCantidadCarrito();
+    actualizarCantidadCarrito();
 });
+
+//filtrar por origen UK USA//////////////
+
+let miBusqueda = document.getElementById("selectContainer");
+
+miBusqueda.addEventListener('change', e => {
+    datosBusqueda.origen = e.target.value;
+    filtrarOrigen();
+});
+
+function filtrarOrigen(ukUsa){
+    const { origen } = datosBusqueda;
+    if ( origen ){
+        return prod.origen === origen;
+    }
+    return ukUsa;
+}
 

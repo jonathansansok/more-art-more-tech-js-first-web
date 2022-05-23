@@ -12,7 +12,6 @@ for (prod of productos) {
     totalPagar += prod.precio * prod.cantidad;
     }
     precioFinal.innerHTML += "<h5>Total: <span id='finalCeroQuizas'>" + totalPagar + "</span></h5>";
-    
 }
 
 const renderCheckOut = () => {
@@ -29,13 +28,14 @@ for (prod of productos) {
 }
 
 const addItem = (idProducto) => {
-            productos.map((producto) => {
-            if (producto.id == idProducto) {
-                producto.cantidad++;
-                renderCheckOut();
-            }
-        })
+        productos.map((producto) => {
+        if (producto.id == idProducto) {
+            producto.cantidad++;
+            renderCheckOut();
+        }
+    });
 }
+
 const removeItem = (idProducto) => {
     productos.map((producto) => {
     if (producto.id == idProducto) {
@@ -47,7 +47,6 @@ const removeItem = (idProducto) => {
         productos.splice(productos.indexOf(producto), 1);
         (localStorage.setItem("carrito", JSON.stringify(productos)));
         renderCheckOut();
-
     }
 }})
 }
