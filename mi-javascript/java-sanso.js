@@ -69,14 +69,19 @@ const actualizarCantidadCarrito = () => {
 
 //filtrar por origen UK USA//////////////
 
-let miBusqueda = document.getElementById("selectContainer");
+//generar un objet con la busqueda 
+const datosBusqueda = {
+    origen : '',
+}
 
-miBusqueda.addEventListener('change', e => {
+let buscando = document.getElementById("selectContainer");
+
+buscando.addEventListener('change', e => {
     datosBusqueda.origen = e.target.value;
     filtrarOrigen();
 });
 
-function filtrarOrigen(ukUsa){
+function filtrarOrigen(){
     const { origen } = datosBusqueda;
     if ( origen ){
         return prod.origen === origen;
