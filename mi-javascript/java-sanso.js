@@ -5,9 +5,9 @@ let tratandoJson = [];
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 //agrego un OPERADOR TERNARIO OR que recupera el último estado del carrito
-const carritoHay = JSON.parse(localStorage.getItem('carrito')) || []
+/* const carritoHay = JSON.parse(localStorage.getItem('carrito')) || []
 console.log(carritoHay);
-
+ */
 const agregarItem = (idProducto) => {
     let producto = tratandoJson.find(producto => producto.id == idProducto);
     if (carrito.findIndex(producto => producto.id == idProducto) == -1) {
