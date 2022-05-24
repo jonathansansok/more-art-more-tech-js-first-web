@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
     const agregarItem = (idProducto) => {
+/*         console.log('pruebaUK'); */
         let producto = tratandoJson.find(producto => producto.id == idProducto);
         if (carrito.findIndex(producto => producto.id == idProducto) == -1) {
             producto.cantidad = 1;
@@ -32,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cargarJson();
 
     const renderizarProductos = (array) => {
-/*         console.log(array); */
+        console.log(array);
         let seccion = document.getElementById("renderProds");
         seccion.innerHTML = "";
         for (const prod of array){
@@ -48,12 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     function darAccionABotones(){
-        for (const prod of tratandoJson) {
+        for (const prod of tratandoJson ) {
             document.getElementById("botonAdd"+prod.id).addEventListener("click", function () {
                 agregarItem(prod.id);
+                console.log("agregado"); //ACA  YA NO LLEGA EL productosFiltrados, EL ARRAY ESTA EN TRATANDOJSON
             })
         }
     }
+
     const actualizarCantidadCarrito = () => {
         let cantidad = 0;
         for (const prod of carrito){
@@ -76,13 +79,13 @@ document.addEventListener("DOMContentLoaded", () => {
         filtrarOrigen(origen);
     });
 
-    function filtrarAccion(ukUsa){
+/*     function filtrarAccion(ukUsa){
         const { origen } = datosBusqueda;
         if ( origen ){
             return ukUsa.origen === origen;
         }
         return ukUsa;
-    }
+    } */
 
     function filtrarOrigen(parametroOrigen){
         if (parametroOrigen == ""){
@@ -90,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }else{
             let productosFiltrados = tratandoJson.filter(prod => prod.origen == parametroOrigen);
             renderizarProductos(productosFiltrados);
+
         }
     }
 });
