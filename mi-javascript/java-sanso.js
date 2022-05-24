@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }else{
             let productosFiltrados = tratandoJson.filter(prod => prod.origen == parametroOrigen);
             renderizarProductos(productosFiltrados);
-
         }
     }
 });
