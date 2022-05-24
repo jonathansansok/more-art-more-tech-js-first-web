@@ -80,7 +80,7 @@ function vaciarCarrito(){
     localStorage.setItem("carrito", JSON.stringify([]));
 }
 
-document.getElementById("btnComprar").addEventListener("click", comprar,);
+document.getElementById("btnComprar").addEventListener("click", comprar);
 
 
 
