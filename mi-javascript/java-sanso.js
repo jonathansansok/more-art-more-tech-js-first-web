@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
             `
         }
     }
-    function darAccionABotones(){
-        for (const prod of tratandoJson) {
+    function darAccionABotones( PRODUCTOS = []){
+        for (const prod of PRODUCTOS) {
             document.getElementById("botonAdd"+prod.id).addEventListener("click", function () {
                 agregarItem(prod.id);
-                console.log("agregado"); //ACA  YA NO LLEGA EL productosFiltrados, EL ARRAY ESTA EN TRATANDOJSON
+/*                 console.log("agregado");  *///ACA  YA NO LLEGA EL productosFiltrados, EL ARRAY ESTA EN TRATANDOJSON
             })
         }
     }
@@ -74,9 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function filtrarOrigen(parametroOrigen){
         if (parametroOrigen == ""){
             renderizarProductos(tratandoJson);
+            darAccionABotones(tratandoJson);
         }else{
             let productosFiltrados = tratandoJson.filter(prod => prod.origen == parametroOrigen);
             renderizarProductos(productosFiltrados);
+            darAccionABotones(productosFiltrados);
         }
     }
 });
