@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
             `
         }
     }
+
     function darAccionABotones( PRODUCTOS = []){
         for (const prod of PRODUCTOS) {
             document.getElementById("botonAdd"+prod.id).addEventListener("click", function () {
                 agregarItem(prod.id);
-/*                 console.log("agregado");  *///ACA  YA NO LLEGA EL productosFiltrados, EL ARRAY ESTA EN TRATANDOJSON
             })
         }
     }
@@ -63,13 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("contadorId").innerHTML = cantidad;
     }
     actualizarCantidadCarrito();
-
+    
     let buscando = document.getElementById("selectContainer");
 
     buscando.addEventListener('change', e => {
-        let origen = e.target.value;
-        filtrarOrigen(origen);
-    });
+            let origen = e.target.value;
+            filtrarOrigen(origen);
+        });
 
     function filtrarOrigen(parametroOrigen){
         if (parametroOrigen == ""){

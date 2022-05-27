@@ -18,7 +18,7 @@
     {
     "id": "3",
     "precio": "55",
-    "origen": "UK",
+    "origen": "USA",
     "clase": "fotoDeSsl-e",
     "descrip": "Channel Strip clásico britanico Rockero.",
     "titulo": "SSL-E"
@@ -34,7 +34,7 @@
     {
     "id": "5",
     "precio": "60",
-    "origen": "UK",
+    "origen": "USA",
     "clase": "fotoDeTrident",
     "descrip": "Channel Strip clásico de Master of Puppets",
     "titulo": "TRIDENT"
