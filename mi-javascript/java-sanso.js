@@ -65,6 +65,17 @@ document.addEventListener("DOMContentLoaded", () => {
     actualizarCantidadCarrito();
     
     let buscando = document.getElementById("selectContainer");
+    let empiezaFiltro = document.getElementById("elija");
+
+    if(empiezaFiltro.value == ""){
+        console.log("hasta aca toma bien el IF");
+         renderizarProductos(tratandoJson);
+        darAccionABotones(tratandoJson);
+    }
+    else{
+        console.log("adios");
+    }
+    
 
     buscando.addEventListener('change', e => {
             let origen = e.target.value;
