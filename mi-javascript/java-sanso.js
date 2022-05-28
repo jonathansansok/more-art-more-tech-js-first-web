@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
 
-    //trato de dar accion a los botones de agregar al carrito desde DOMcontentloaded
-    let empiezaFiltro = document.getElementById("elija");
-    if(empiezaFiltro.value == ""){
+    //trato de dar accion a los botones de agregar al carrito desde que se carga la pagina
+    let elegirSinFiltrar = document.getElementById("elija");
+    if(elegirSinFiltrar.value == ""){
         console.log("hasta aca toma bien el IF");
          renderizarProductos(tratandoJson);
         darAccionABotones(tratandoJson);
