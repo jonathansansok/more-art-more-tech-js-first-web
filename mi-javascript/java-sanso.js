@@ -64,9 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     actualizarCantidadCarrito();
     
-    let buscando = document.getElementById("selectContainer");
-    let empiezaFiltro = document.getElementById("elija");
 
+
+    //trato de dar accion a los botones de agregar al carrito desde DOMcontentloaded
+    let empiezaFiltro = document.getElementById("elija");
     if(empiezaFiltro.value == ""){
         console.log("hasta aca toma bien el IF");
          renderizarProductos(tratandoJson);
@@ -75,7 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
     else{
         console.log("adios");
     }
-    
+
+    let buscando = document.getElementById("selectContainer");
 
     buscando.addEventListener('change', e => {
             let origen = e.target.value;
