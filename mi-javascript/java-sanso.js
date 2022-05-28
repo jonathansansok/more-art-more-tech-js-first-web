@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function darAccionABotones( PRODUCTOS = []){
-        for (const prod of PRODUCTOS) {
+    function darAccionABotones( productos = []){
+        for (const prod of productos) {
             document.getElementById("botonAdd"+prod.id).addEventListener("click", function () {
                 agregarItem(prod.id);
             })
