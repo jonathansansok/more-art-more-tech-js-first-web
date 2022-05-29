@@ -16,7 +16,7 @@ HTML - En el cual inserté todo el contenido necesario para el proyecto.
 
 CSS - Para darle estilos a todos los archivos *HTML.  
 
-JAVASCRIPT - Para ciertas animacies que favorecen al diseño responsive. 
+JAVASCRIPT - Para la funcionalidad del E-commerce y ciertas animaciones que favorecen al diseño responsive. 
 
  
 ## COMENZANDO 🚀 
