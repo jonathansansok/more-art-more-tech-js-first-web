@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((data) => {
         tratandoJson = data;
         renderizarProductos(tratandoJson);
-        darAccionABotones();
+        darAccionABotones(tratandoJson);
         });
     }
     cargarJson();
