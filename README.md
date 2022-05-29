@@ -1,4 +1,4 @@
-## WEB DE COMPARACION ENTRE CONSOLAS DE SONIDO. 🎧
+## WEB DE COMPARACION ENTRE CONSOLAS DE SONIDO Y VENTA DE PLUGINS. 🎧
 
   La idea de esta WEB es demostrar como se procesa un fragmento de canción a través de 4 consolas de sonido, las cuales son API - NEVE - SSL-E SS-G y NEVE. Cada usuario debería tener auriculares de gama media/alta o bafles/monitores de estudio.
   
@@ -33,7 +33,7 @@ Tener instalado el administrador de Base de Datos Postgres SQL
 1 - Clonar repositorio
 
 Desde la consola de comandos, ubicarse en la carpeta en la cual se clonara el repositrio y luego ejecutar el comando git clone mas la url.
-User/Folder git clone https://github.com/jonathansansok/jonathan-sanso-art-tech.git
+User/Folder git clone https://github.com/jonathansansok/-art-tech-js-first-web.git
 
 2 - Abrir editor de codigo preferido
 
