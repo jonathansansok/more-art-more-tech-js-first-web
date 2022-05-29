@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         for (const prod of productos) {
             document.getElementById("botonAdd"+prod.id).addEventListener("click", function () {
                 agregarItem(prod.id);
-            })
+            });
         }
     }
 
@@ -64,18 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     actualizarCantidadCarrito();
     
-
-
-    //trato de dar accion a los botones de agregar al carrito desde que se carga la pagina
-    let elegirSinFiltrar = document.getElementById("elija");
-    if(elegirSinFiltrar.value == ""){
-        console.log("hasta aca toma bien el IF");
-         renderizarProductos(tratandoJson);
-        darAccionABotones(tratandoJson);
-    }
-    else{
-        console.log("adios");
-    }
 
     let buscando = document.getElementById("selectContainer");
 
