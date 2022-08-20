@@ -85,6 +85,6 @@ const volverATienda = () => {
 document.getElementById("btnComprar").addEventListener("click", comprar);
 
 
-
+z
 
 

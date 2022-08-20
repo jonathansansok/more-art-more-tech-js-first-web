@@ -1,0 +1,1160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,600&display=swap");
+body {
+  background: rgba(0, 0, 0, 0.92) url("../elements/elementos/images/vsts-y-wallpapers/wallpaper-ondas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+
+.product-rowy {
+  padding-bottom: 0px;
+}
+
+.iconweb {
+  width: 5%;
+  border: 2px rgb(33, 157, 214) solid;
+  border-radius: 50%;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-brandy {
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 140%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(3deg, #bc31bd, #24d3cd, #49a320);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 88% 0%;
+  }
+  50% {
+    background-position: 13% 100%;
+  }
+  100% {
+    background-position: 88% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 88% 0%;
+  }
+  50% {
+    background-position: 13% 100%;
+  }
+  100% {
+    background-position: 88% 0%;
+  }
+}
+.bg-darky, .prendeTitle {
+  background-color: black;
+}
+
+.navbar-nav {
+  margin-left: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(33, 157, 214);
+  font-size: 140%;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  transform: scale(1.07);
+  color: salmon;
+}
+
+.jumbotron {
+  background-image: url("../elements/elementos/images/vsts-y-wallpapers/wallpaper-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: rgb(33, 157, 214);
+  border-radius: 0px;
+  margin: 0px;
+  border-bottom: 2px solid black;
+}
+.jumbotron h1 {
+  text-shadow: 2px 2px 2px black;
+}
+.jumbotron p {
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0px 2px 2px black;
+}
+
+.btn-warning {
+  background-color: black;
+  color: rgb(33, 157, 214);
+  border-color: rgb(33, 157, 214);
+}
+.btn-warning:hover {
+  transition: all 0.5s;
+  background-color: rgb(33, 157, 214);
+  color: black;
+  border-color: rgb(33, 157, 214);
+}
+
+/* ------EMPIEZA CONDICIONAL ------ */
+.prendeTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: rgb(33, 157, 214);
+  margin-top: 1%;
+  font-size: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: transparent;
+  text-shadow: 4px 4px 4px black;
+}
+
+/* ------TERMINA CONDICIONAL ------ */
+.product-rowy {
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  gap: 5%;
+}
+.product-rowy .card {
+  margin-bottom: 7%;
+  flex-direction: column;
+  background-color: black;
+  width: 450px;
+  background-color: transparent;
+  text-shadow: 4px 4px 4px black;
+}
+.product-rowy .card .card-img-top {
+  box-shadow: 0 0px 10px rgb(33, 157, 214), 0 0 5px white inset;
+}
+.product-rowy .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 0px;
+  border-bottom: 0px;
+}
+.product-rowy .card .card-body .card-title {
+  color: rgb(33, 157, 214);
+  background-color: black;
+  border: solid 2px rgb(33, 157, 214);
+  border-radius: 5%;
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+.product-rowy .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "text-1   imagen-1" "imagen-2 text-2";
+  width: 90%;
+  height: 100%;
+}
+.product-rowy .text-1 {
+  grid-area: text-1;
+  font-family: "Montserrat Alternates", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: end;
+  padding: 0 1.5rem;
+  font-size: 1.2rem;
+}
+.product-rowy .imagen-1 {
+  grid-area: imagen-1;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/cinta-analog.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product-rowy .imagen-2 {
+  grid-area: imagen-2;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/pre-neve.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product-rowy .text-2 {
+  grid-area: text-2;
+  font-family: "Montserrat Alternates", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  padding: 0 1.5rem;
+  font-size: 1.2rem;
+}
+.product-rowy .titGrid {
+  color: salmon;
+  font-weight: bold;
+}
+.product-rowy .titGrid2 {
+  color: salmon;
+  font-weight: bold;
+}
+.product-rowy .textGrid1 {
+  color: rgb(33, 157, 214);
+  font-weight: bold;
+}
+.product-rowy .grid-container-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+  grid-auto-columns: 1fr;
+  font-size: 1.1rem;
+  gap: 0px 0px;
+  color: rgb(33, 157, 214);
+  grid-template-areas: "data-1 data-2 data-3";
+  width: 100%;
+  height: 100%;
+}
+.product-rowy .data-1 {
+  grid-area: data-1;
+  font-family: "Montserrat Alternates", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  padding: 0 1.2rem;
+  transition: all 0.7s;
+}
+.product-rowy .data-1:hover {
+  transform: scale(1.07);
+  color: salmon;
+}
+.product-rowy .data-2 {
+  grid-area: data-2;
+  font-family: "Montserrat Alternates", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  padding: 0 1.2rem;
+  transition: all 0.7s;
+}
+.product-rowy .data-2:hover {
+  transform: scale(1.07);
+  color: salmon;
+}
+.product-rowy .data-3 {
+  grid-area: data-3;
+  font-family: "Montserrat Alternates", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  padding: 0 1.2rem;
+  transition: all 0.7s;
+}
+.product-rowy .data-3:hover {
+  transform: scale(1.07);
+  color: salmon;
+}
+.product-rowy .data-1Foto {
+  width: 80%;
+  align-self: center;
+  margin-bottom: 15px;
+}
+.product-rowy .data-1Text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.product-rowy .data-1Tit {
+  font-size: 1.5rem;
+}
+
+#lastCard {
+  margin-bottom: 5%;
+}
+
+/* ------EMPIEZA CONDICIONAL ------ */
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: rgb(33, 157, 214);
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: black;
+  border-top: 1px solid rgb(33, 157, 214);
+  width: 100%;
+  /* ------TERMINA CONDICIONAL ------ */
+}
+.footer .frase {
+  color: salmon;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.footer .copyright {
+  text-align: center;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  /* ------EMPIEZA MIXIN ------ */
+  /* ------EMPIEZA MAP ------ */
+}
+.articles .fotosDescrip {
+  margin-bottom: 10%;
+  transition: all 0.7s;
+}
+.articles .fotosDescrip:hover {
+  transform: scale(1.08);
+  max-width: 100%;
+}
+.articles .titleParticular {
+  color: rgb(33, 157, 214);
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: solid 2px rgb(33, 157, 214);
+  border-radius: 10%;
+}
+.articles .subtitleResp {
+  color: rgb(33, 157, 214);
+  font-size: 40px;
+  margin-top: 30px;
+  text-align: center;
+}
+.articles .apiText-red1 {
+  font-size: 25px;
+  color: rgb(33, 157, 214);
+  text-align: justify;
+  border: 2px solid rgb(33, 157, 214);
+  margin-top: 10px;
+  margin-bottom: 60px;
+  transition: all 0.7s;
+  padding: 10px;
+  border-radius: 10px;
+  text-indent: 1.5em;
+}
+.articles .apiText-red1:hover {
+  transform: scale(1.08);
+}
+.articles .apiText-red2 {
+  font-size: 25px;
+  color: rgba(69, 229, 98, 0.7176470588);
+  text-align: justify;
+  border: 2px solid rgb(33, 157, 214);
+  margin-top: 10px;
+  margin-bottom: 60px;
+  transition: all 0.7s;
+  padding: 10px;
+  border-radius: 10px;
+  text-indent: 1.5em;
+}
+.articles .apiText-red2:hover {
+  transform: scale(1.08);
+}
+.articles .apiText-red2 {
+  margin-bottom: 0px;
+}
+
+/* ------TERMINA MIXIN ------ */
+/* ------TERMINA MAP ------ */
+.contactmeMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contactmeMain .contactmeDescr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: flex-start;
+}
+.contactmeMain .contactmeDescr .inHome {
+  color: rgb(33, 157, 214);
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: solid 2px rgb(33, 157, 214);
+  border-radius: 5%;
+  margin: 30px 0px 30px 0px;
+}
+.contactmeMain .bioMyContainer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 200px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  margin: 30px 0px;
+  grid-template-areas: "miFoto miTexto";
+  width: 60%;
+  height: 100%;
+}
+.contactmeMain .miFoto {
+  grid-area: miFoto;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/foto-perf.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 3rem;
+  border-radius: 10px;
+}
+.contactmeMain .miTexto {
+  grid-area: miTexto;
+  font-family: "Montserrat Alternates", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  font-size: 1.3rem;
+  color: rgb(33, 157, 214);
+}
+.contactmeMain .misRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px 10px 50px 10px;
+  gap: 80px;
+}
+.contactmeMain .misRedes .logosOk {
+  font-size: 80px;
+  width: 80px;
+  height: 80px;
+  transition: all 0.6s;
+}
+.contactmeMain .misRedes .logosOk:hover {
+  transform: scale(1.2);
+  max-width: 100%;
+  color: rgb(33, 157, 214);
+}
+.contactmeMain article a {
+  color: none;
+}
+
+.formContainer {
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+.formContainer h3 {
+  color: rgb(33, 157, 214);
+  background-color: black;
+  padding: 0.5px;
+  margin: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+.formContainer .boton {
+  background: black;
+  color: rgb(33, 157, 214);
+  padding: 20px;
+  border: 1px solid rgb(33, 157, 214);
+  border-radius: 5px;
+}
+.formContainer .boton:hover {
+  cursor: pointer;
+  color: black;
+  background-color: salmon;
+  border: 1px solid black;
+  transition: 0.7s;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(33, 157, 214, 0.1);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  border: 2px solid;
+  margin-top: 10px;
+}
+
+input, textarea {
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+  color: rgb(33, 157, 214);
+  font-weight: bold;
+  background-color: black;
+}
+input textarea, textarea textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+/* ----------------------EMPIEZA TIENDA -----------------*/
+.titleParticularCommerce {
+  color: rgb(33, 157, 214);
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: solid 2px rgb(33, 157, 214);
+  border-radius: 5%;
+}
+
+.carritoTodo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buyModifiers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#renderProds {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*     align-items: center; */
+  align-self: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  margin-bottom: 60px;
+  gap: 5px 5px;
+  width: 80%;
+}
+
+.todosParametros {
+  background-color: rgb(33, 157, 214);
+  width: 80%;
+  font-weight: bold;
+  height: 60px;
+  margin-top: 30px;
+  margin-right: 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.todosParametros label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+#buscador {
+  margin: 5px;
+  width: 190px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.shoppingTodo {
+  background-color: black;
+  border-radius: 3px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.checkoutWay {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  /*     .shoppingCart{
+           margin-left: 50px;
+          margin-right: 50px;
+          margin-top: 15px; 
+      } */
+}
+
+.contadorUnidades {
+  color: black;
+  background-color: #4ca725;
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 7px 0px 0px 5px;
+}
+
+.buyApi {
+  box-sizing: border-box;
+  background-color: rgb(33, 157, 214);
+  width: 32.85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.titleBuy {
+  color: rgba(69, 229, 98, 0.7176470588);
+  padding: 0px 10px;
+  border: 2px solid rgba(69, 229, 98, 0.7176470588);
+  border-radius: 5px;
+  background-color: black;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+.fotoDeApi {
+  width: 80%;
+  height: 150px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/api2-rezi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeNeve {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/pre-neve.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeSsl-e {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/ssl-e-rezi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeSsl-g {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/ssl-g-rezi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeTrident {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/trident.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeTelefunken {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/telefunken-ok.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeApi-2500 {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/api-2500.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeTape {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/vsts-y-wallpapers/cinta-analog.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeReverb {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/fotos-cards/pror3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeTriode-609 {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/fotos-cards/neve-compress.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeG-comp {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/fotos-cards/ssl-comp.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoDeVari-mu {
+  width: 80%;
+  height: 140px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: url("../elements/elementos/images/tienda/vari-mu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textoDeBuy {
+  margin: 5px 10px 0px 10px;
+}
+
+.price {
+  margin: 2px 10px 4px 10px;
+}
+
+.botonAdd {
+  color: rgb(19, 187, 19);
+  padding: 5px;
+  margin-top: 0px;
+  width: 80%;
+  border-radius: 5px;
+  transition: all 0.6s;
+}
+
+.botonAdd:hover {
+  transform: scale(1.05);
+}
+
+/* ----------------------TERMINA TIENDA -----------------*/
+/* ----------------------EMPIEZA CHECKOUT -----------------*/
+.containerCheckout {
+  display: grid;
+  grid-template-columns: 12rem 12rem 12rem;
+  grid-template-rows: 50px auto 50px 50px;
+  gap: 5px 5px;
+  margin-top: 40px;
+  margin-bottom: 205px;
+  grid-auto-flow: row;
+  grid-template-areas: "elementosSeleccionados canti prec" "producto cantidad precio" "metodoPago metodoPago metodoPago" "terminar-y-comprar terminar-y-comprar terminar-y-comprar";
+}
+
+.elementosSeleccionados {
+  grid-area: elementosSeleccionados;
+  background-color: rgb(33, 157, 214);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.canti {
+  grid-area: canti;
+  background-color: rgb(33, 157, 214);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.prec {
+  grid-area: prec;
+  background-color: rgb(33, 157, 214);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.producto {
+  grid-area: producto;
+  background-color: rgb(33, 157, 214);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cantidad {
+  grid-area: cantidad;
+  background-color: rgb(33, 157, 214);
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  /*     .emparejar{
+          background-color: green;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      } */
+}
+
+.precio {
+  grid-area: precio;
+  background-color: rgb(33, 157, 214);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.metodoPago {
+  grid-area: metodoPago;
+  background-color: rgb(33, 157, 214);
+  text-align: right;
+  padding-right: 80px;
+  border-radius: 10px;
+}
+
+.terminar-y-comprar {
+  grid-area: terminar-y-comprar;
+  background-color: rgb(212, 193, 193);
+  border-radius: 10px;
+  background-color: green;
+}
+
+.botonesCheckout {
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  background-color: rgb(212, 193, 193);
+  align-self: center;
+  border: 0px;
+  padding: 0px 5px;
+  background-color: transparent;
+}
+
+/* 
+.cantidad{
+
+} */
+/* ----------------------TERMINA CHECKOUT -----------------*/
+@media (max-width: 875px) {
+  .titleParticularCommerce {
+    font-size: 40px;
+  }
+}
+@media (max-width: 860px) {
+  .buyApi {
+    width: 49.5%;
+  }
+}
+@media (max-width: 793px) {
+  header {
+    font-size: 80%;
+  }
+}
+/* @media (max-width: 788px){
+
+
+    .inputsNationals{ 
+        height: 20px;
+        label {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    } 
+    .inputsBuy{
+        margin-top: 00px;
+        margin-bottom: 00px;
+    }
+}
+ */
+@media (max-width: 768px) {
+  .prendeTitle {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 17px;
+  }
+  .articles .apiText-red1:hover {
+    transform: none;
+  }
+  .articles .apiText-red2:hover {
+    transform: none;
+  }
+  .articles .fotosDescrip:hover {
+    transform: none;
+  }
+  .articles .subtitleResp {
+    font-size: 26px;
+    padding: 0px 20px;
+  }
+  .product-rowy .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 480px 200px 480px;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "text-1" "imagen-1" "text-2" "imagen-2";
+    width: 90%;
+    height: 100%;
+  }
+  .product-rowy .text-1 {
+    grid-area: text-1;
+    text-align: center;
+    font-size: 95%;
+  }
+  .product-rowy .text-2 {
+    grid-area: text-2;
+    text-align: center;
+    font-size: 95%;
+    margin-top: 70px;
+  }
+  .product-rowy .imagen-1 {
+    grid-area: imagen-1;
+    border-radius: 10px;
+  }
+  .product-rowy .imagen-2 {
+    grid-area: imagen-2;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+  }
+  .product-rowy .grid-container-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "data-1" "data-2" "data-3";
+    width: 100%;
+    height: 1350px;
+    margin-top: 10px;
+  }
+  .product-rowy .data-1 {
+    grid-area: data-1;
+    text-align: center;
+    font-size: 95%;
+  }
+  .product-rowy .data-2 {
+    grid-area: data-2;
+    text-align: center;
+    font-size: 95%;
+    margin-top: 22px;
+  }
+  .product-rowy .data-3 {
+    grid-area: data-3;
+    text-align: center;
+    font-size: 95%;
+    margin-top: 22px;
+  }
+  .contactmeMain .bioMyContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 200px;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "miFoto" "miTexto";
+    width: 61%;
+    height: 100%;
+  }
+  .contactmeMain .miFoto {
+    grid-area: miFoto;
+    background: url("../elements/elementos/images/vsts-y-wallpapers/foto-perf.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contactmeMain .miTexto {
+    grid-area: miTexto;
+    font-size: 90%;
+    text-align: justify;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 1.3rem;
+  }
+  .misRedes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .footer {
+    padding-right: 7px;
+    padding-left: 7px;
+    font-size: 95%;
+  }
+}
+@media (max-width: 635px) {
+  .product-rowy .grid-container-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 420px 420px 420px 420px;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "data-1" "data-2" "data-3";
+    width: 100%;
+    height: 1280px;
+    margin-top: 10px;
+  }
+  .escalaPrecio {
+    font-size: 12px;
+  }
+}
+@media (max-width: 623px) {
+  .buyApi {
+    width: 100%;
+  }
+  .shoppingTodo {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 522px) {
+  .nacionalidad .origen {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 501px) {
+  .contadorUnidades {
+    width: 30%;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .iconWeb {
+    width: 33%;
+  }
+  .product-rowy .grid-container .text-1 {
+    font-size: 90%;
+  }
+  .product-rowy .grid-container .text-2 {
+    font-size: 90%;
+  }
+  .contactmeMain .bioMyContainer .miTexto {
+    font-size: 1.2rem;
+  }
+  .contactmeMain .formContainerMax {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contactmeMain .misRedes {
+    gap: 50px;
+  }
+  .formContainer {
+    width: auto;
+  }
+  .footer {
+    font-size: 15px;
+  }
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 150%;
+  }
+  .product-rowy .grid-container .text-1 {
+    font-size: 86%;
+    margin-bottom: 30px;
+  }
+  .product-rowy .grid-container .text-2 {
+    font-size: 86%;
+  }
+  .contactmeMain .bioMyContainer .miTexto {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  .contactmeMain .misRedes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 1px;
+  }
+  .contactmeMain .contactmeDescr .inHome {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 50px;
+  }
+}
+@media (max-width: 420px) {
+  .contactmeMain .misRedes {
+    gap: 30px;
+  }
+  .titleParticularCommerce {
+    font-size: 2rem;
+  }
+}
+.logWhats {
+  color: rgba(69, 229, 98, 0.7176470588);
+}
+
+/* SIN VARIABLES: */
+.logXtra {
+  color: green;
+}
+
+.logIg {
+  color: #DD2A7B;
+}
+
+.logLnk {
+  color: #0077B5;
+}
+
+.logFb {
+  color: #395592;
+}/*# sourceMappingURL=estilos.css.map */
