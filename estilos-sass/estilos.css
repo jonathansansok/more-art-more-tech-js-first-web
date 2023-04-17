@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,600&display=swap");
 body {
-  background: rgba(0, 0, 0, 0.92)
-    url("../elements/elementos/images/vsts-y-wallpapers/wallpaper-ondas.jpg");
+  background: rgba(0, 0, 0, 0.92) url("../elements/elementos/images/vsts-y-wallpapers/wallpaper-ondas.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +19,6 @@ body {
 }
 
 .navbar {
-  position: -webkit-sticky;
   position: sticky;
   width: 100%;
   top: 0;
@@ -38,20 +36,7 @@ body {
   padding: 10px;
   background: linear-gradient(3deg, #bc31bd, #24d3cd, #49a320);
   background-size: 600% 600%;
-  -webkit-animation: AnimationName 5s ease infinite;
   animation: AnimationName 5s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 88% 0%;
-  }
-  50% {
-    background-position: 13% 100%;
-  }
-  100% {
-    background-position: 88% 0%;
-  }
 }
 @keyframes AnimationName {
   0% {
@@ -64,8 +49,7 @@ body {
     background-position: 88% 0%;
   }
 }
-.bg-darky,
-.prendeTitle {
+.bg-darky, .prendeTitle {
   background-color: black;
 }
 
@@ -283,9 +267,7 @@ body {
   margin-bottom: 15px;
 }
 .product-rowy .data-1Text {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .product-rowy .data-1Tit {
   font-size: 1.5rem;
@@ -1154,13 +1136,13 @@ textarea textarea {
 }
 
 .logIg {
-  color: #dd2a7b;
+  color: #DD2A7B;
 }
 
 .logLnk {
-  color: #0077b5;
+  color: #0077B5;
 }
 
 .logFb {
   color: #395592;
-} /*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
